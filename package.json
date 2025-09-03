@@ -1,0 +1,22 @@
+{
+  "name": "openapi_todo_app",
+  "version": "1.0.0",
+  "description": "Todo API using autogeneration",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "generateSchemas": "node scripts/generateSchemas.js"
+  },
+  "author": "Marius S. Navjord",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "openapi-typescript-validator": "^4.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "express": "^5.1.0"
+  }
+}
