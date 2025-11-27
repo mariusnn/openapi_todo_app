@@ -13,6 +13,7 @@ Using `openapi-typescript-validator` to generate validators (which produces code
 npm i typescript --save-dev
 npm i openapi-typescript-validator --save-dev
 npm i ajv
+npm i ajv-formats
 npm i express
 npm i @types/express --save-dev
 npm i ts-node --save-dev
@@ -27,6 +28,7 @@ const { generate } = require('openapi-typescript-validator');
 generate({
   schemaFile: path.join(__dirname, '../src/openapi.yaml'),
   schemaType: 'yaml',
+  addFormats: true,
   directory: path.join(__dirname, '../src/_generated')
 })
 ```
